@@ -50,9 +50,11 @@ a {
 }
 
 
-
 /* nav */
 
+.position {
+  position: fixed;
+}
 
 .navLink {
   font-family: azo-sans-web sans-serif;
@@ -164,6 +166,11 @@ a {
 
 }
 
+.slickThree {
+  height: 100%;
+
+}
+
 #slideshow {
   background-color: #F2F3F4;
   height: 300px;
@@ -176,6 +183,7 @@ a {
   height: 100%;
   object-fit: contain;
 }
+
 
 .weCanDoAlot {
   display: flex;
@@ -542,6 +550,13 @@ a {
 
 .logo {
   object-fit: scale-down;
+}
+
+.impact {
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+
 }
 
 /* resources */

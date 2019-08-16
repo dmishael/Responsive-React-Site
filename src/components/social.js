@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+// import Blog from './components/blog';
 import '../App.css';
 
-class Blog extends Component {
+class Social extends Component {
   render() {
     // console.log(this.props.social)
   return (
-    this.props.social.map((blog) => (
+    this.props.blogPosts.map((blog) => (
       <h1 className="Blog"> {blog.title}</h1>
     )
   ))
 }
 }
-export default Blog;
+export default Social;
