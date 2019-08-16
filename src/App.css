@@ -1,33 +1,627 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.Blog {
+  color: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: myFirstFont;
+  src: url(https://www.gfxfile.com/90e/Azo.Sans.OTF.zip);
+}
+
+body {
+  font-family: azo-sans-web, sans-serif;
+  font-style: normal;
+  color: #c2c2c2;
+}
+
+footer {
+  background-color:#253f8e;
+  font: 14px azo-sans-web-thin sans-serif;
+  color: white;
+  align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.li {
+  display: list-item;
+}
+
+.fmglogo {
+  width: 140px;
+  height: 70px;
+}
+
+.homepageHero {
+  background-image: url("assets/fmg_homepage_hero.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  /* background-position: top right; */
+  height: 1000px;
+  margin-bottom: -30px;
+}
+
+
+
+/* nav */
+
+
+.navLink {
+  font-family: azo-sans-web sans-serif;
+  font-size: 20px;
+  color: #c2c2c2;
+  font-weight: 100;
+  padding-left: 20px;
+}
+
+.ColorNav {
+  background: none;
+}
+/* hpheader */
+
+.hpHeader {
+  display: grid;
+  grid-template-columns: 20% 50% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.hamburger {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.hpHeaderText {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 30px;
+  color:  #A7B0B2;
+  font-weight: 100;
+}
+
+.hpHeaderText2 {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 60px;
+  color:  #FFFFFF;
+  font-weight: 300;
+}
+
+.hpHeaderText3 {
+  grid-column: 2;
+  grid-row: 4;
+  font-size: 13px;
+  color:  #D6DD29;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.arrow {
+  height: 50px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+
+/* phrenology */
+
+.cardBlock{
+  font-family: azo-sans-web, sans-serif;
+  font-style: normal;
+  grid-column: 2;
+  grid-row: 5;
+  height: 300px;
+  width: 80%;
+}
+
+/* /frəˈnäləjē ər frəˈnik?/ */
+
+.dictionary {
+  color: #8c979a;
+  font: 28px serif;
+}
+
+.dictionaryFrenik {
+  color: #131516;
+  font: 28px;
+  font-weight: 500;
+}
+
+.dictionaryFrenikText {
+  color: #131516;
+  font: 16px;
+  font-weight: 200;
+}
+
+/* yearInReview */
+
+.yearInReview {
+  width: 100%;
+  height: 660px;
+  margin: 0;
+
+}
+
+/* clientSlider */
+
+
+
+.slick {
+  height: 150px;
+
+}
+
+.slickTwo {
+  height: 150px;
+
+}
+
+#slideshow {
+  background-color: #F2F3F4;
+  height: 300px;
+}
+
+
+
+.clientSlider {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.weCanDoAlot {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.weDoAlot {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-style: azo-sans;
+  color:  #131516;
+  font-weight: 450;
+  letter-spacing: 4px;
+}
+
+/* We Can Do */
+
+.whatWeDoH{
+  text-transform: uppercase;
+  font-size: 18px;
+  color:  #000000;
+  font-weight: 400;
+}
+
+.weDo {
+  position: relative;
+}
+
+
+
+.whatWeDoText {
+  color: #373D3F;
+  font: 16px Azo-sans-web sans-serif;
+  font-weight: 300;
+  list-style-position: inside;
+}
+
+.internalButton {
+  color: #253F8E;
+  font-size: 12px;
+  border-bottom: 2px solid yellowgreen;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
+
+/* we make great work */
+
+
+.weMakeGreatWorkGrid {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1 1 1;
+}
+
+
+.weMakeGreatWork {
+  background-color: #F2F3F4;
+  height: 150px;
+}
+
+.GreatWorkCarousel {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* were cool */
+
+.weCool {
+  background-color: #F2F3F4;
+}
+
+/* quizPlaceholder */
+
+.quizPlaceholder {
+  height: 300px;
+  background-color: darkblue;
+}
+
+/* WORK */
+
+
+.workHero {
+  background-image: url("assets/homepage_slider_takedown.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+.wpHeader{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr, 4fr, 2fr;
+}
+
+.wpHeaderText1 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 30px;
+  color:  #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.wpHeaderText2 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 18px;
+  font-style: azo-sans;
+  color:  #F8F8F8;
+  font-weight: 100;
+}
+
+/* clients */
+
+.workClients {
+  font-size: 14px;
+  font-style: azo-sans;
+  color: #373D3F;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+.workClientImages {
+  height: 225px;
+  width: 203px;
+  object-fit: cover;
+}
+
+/* even more clients */
+
+.workClientLogos {
+  height: 225px;
+  width: 203px;
+  border-bottom: 3px solid grey;
+  object-fit: contain;
+}
+
+/* even more clients */
+
+#clientQuote {
+  font-family: azo-sans;
+  font-weight: 100;
+  font-size: 20px;
+  color: #343434;
+}
+
+#clientQuoteHeader {
+  font-family: azo-sans;
+  font-weight: 400;
+  color: #343434;
+  font-size: 13px;
+  margin: 20;
+
+}
+
+
+
+.one {
+  height: 150px;
+
+}
+
+#slideshowTwo {
+  background-color: #FFFFFF;
+}
+
+/* Capabilities */
+
+
+.capabilitiesHero {
+  background-image: url("assets/capabilities_hero.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+.capabilitiesLogos {
+  height: 75px;
+  width: 75px;
+}
+
+#circleLogo {
+  border: 4px solid #373D3F;
+  background-color: #FFFFFF;
+  height: 125px;
+  border-radius: 50%;
+  width: 125px;
+}
+
+.wayWeWorkHeader {
+  font-size: 18px;
+  font-style: azo-sans;
+  color: #373D3F;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+.wayWeWorkText {
+  font-size: 16px;
+  font-style: azo-sans;
+  color: #373D3F;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.wayWeWorkLine {
+  align: left;
+  border-width: 1px;
+  color: #D6DD29;
+}
+
+/* Min-width */
+
+@media(min-width: 991px) {
+  hr {
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 991px) {
+  hr {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 992px) {
+  .allTheThings {
+    order: second;
+  }
+}
+
+.howCanWeHelp {
+  background-image: linear-gradient(#253F8E, #373D3F)
+}
+
+.weDoAlotCapabilities {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-style: azo-sans;
+  color:  #FFFFFF;
+  font-weight: 450;
+  letter-spacing: 4px;
+}
+
+.weDoAlotCapabilitiesText {
+  font-size: 14px;
+  font-style: azo-sans;
+  color:  #FFFFFF;
+  font-weight: 50;
+  letter-spacing: 2px;
+}
+
+/* About */
+
+
+.aboutHero {
+  background-image: url("assets/aboutpage_hero.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+.wpHeaderTextAbout {
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+.imgWrap {
+  position: relative;
+  height: 225px;
+  width: 190px;
+}
+
+
+.imgDescription {
+   position: absolute;
+   top: 30%;
+   bottom: 0;
+   left: 10%;
+   right: 10%;
+   font-size: 20px;
+   font-weight: 400;
+   color: black;
+   letter-spacing: 1px;
+   visibility: hidden;
+
+   /* transition effect. not necessary */
+   transition: opacity 1s, visibility 1s;
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.title {
+  font-weight: 100;
+}
+
+.leadershipTeam {
+  height: 100%;
+}
+
+.noGrey {
+  background-color: #FFFFFF;
+}
+
+.auroraHero {
+  background-image: url("assets/aurora.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.allHandsHero {
+  background-image: url("assets/allHands.jpg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.sparcHero{
+  background-image: url("assets/paint.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.pencilsHero{
+  background-image: url("assets/pencils.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.aboutText {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutTextSignature {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  object-fit: scale-down;
+}
+
+/* resources */
+
+.resourcesHeader {
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.resourcesHero {
+  background-image: url("assets/resourcesBanner.png");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+.resourcesHeaderNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#253f8e;
+  height: auto;
+}
+
+.resourcesHeaderSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resourcesHeaderLinks {
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+}
+
+.center-align {
+text-decoration: none;
+color: #DADEDF;
+}
+
+.enlightenedVideo {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #373D3F;
+}
+
+.englightenedDigital {
+  background-color: #535353;
+}
+/* footer */
+
+.fmgfooterlink {
+  font-style: none;
+}
+
+.footerlinks {
+  font: 20px azo-sans-web sans-serif;
+  color: white;
+}
+
+.email{
+  color: yellow;
+}
+
+.copyright {
+  font-family: azo-sans-web, sans-serif;
+  font-style: normal;
+  font-weight: 80;
+  color: #c2c2c2;
+}
+
+.socialIcon {
+  height: 25px;
+  width: 25px;
+}
+
+li {
+  list-style-position: inside;
 }
