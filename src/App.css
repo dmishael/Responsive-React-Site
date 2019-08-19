@@ -206,6 +206,29 @@ a {
   font-weight: 400;
 }
 
+.blogPost {
+    align-items: center;
+}
+
+.blogArticles {
+  text-transform: uppercase;
+  font-size: 18px;
+  color:  #000000;
+  font-weight: 400;
+  flex: 1;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blogVideos {
+
+  max-width: 200px;
+  max-height: 200px;
+
+}
+
 .weDo {
   position: relative;
 }
@@ -226,6 +249,13 @@ a {
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
+}
+
+.internalButton2 {
+  color: #253F8E;
+  font-size: 12px;
+  border-bottom: 2px solid yellowgreen;
+  text-transform: uppercase;
 }
 
 /* we make great work */

@@ -4,6 +4,8 @@ import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
 import AboutSlider from "./aboutSlider.js";
+import SocialPost1 from "./social.js"
+import BlogPosts from "./blogPosts.js"
 
 class Capabilities extends Component {
 
@@ -171,9 +173,10 @@ class Capabilities extends Component {
   </div>
 </div>
 
-<div id="reactContainer">
-  we know alot too placeholder
+<div>
+  <BlogPosts/>
 </div>
+
 
 <footer>
   <div class="pt-4 d-flex justify-content-center">

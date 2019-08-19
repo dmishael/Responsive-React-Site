@@ -1,14 +1,22 @@
 import React, { Component } from "react";
 import "../App.css";
+import BlogPosts from "./blogPosts.js"
 import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
-import Social from "./social.js";
 
 class Home extends Component {
+  state = {
+    social: true,
+    technology: false,
+    industry: false,
+    videos: false
+
+  };
 
   render() {
-    // console.log(this.props.social)
+    // console.log(this.props)
+
     return (
       <div className="Home">
         <div class="homepageHero hpHeader">
@@ -112,7 +120,7 @@ class Home extends Component {
         <section id="slideshow">
           //{" "}
           <div class="slick">
-            <SimpleSlider class="slick" id="slideshow" />
+            <SimpleSlider />
             //{" "}
           </div>
           //{" "}
@@ -244,12 +252,10 @@ class Home extends Component {
             we know a lot, too
           </div>
 
-          <Social/>
-
-          <div class="pt-2 mt-5 mb-5 dictionaryFrenikText d-flex justify-content-center">
-            pull rest of dynamic content from Resources page script once
-            completed...
+          <div>
+            <BlogPosts/>
           </div>
+
 
           <div class="row row-fluid flex-grid weDo">
             <div class="border-right mb-5 pb-5 col">
@@ -304,11 +310,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div class="pb-4">
-          <a class="m-5 p-5 weDo d-flex justify-content-center" href="#">
-            <span class="internalButton">more from our blog</span>
-          </a>
-        </div>
+
         <div class=" ml-4 hpHeader hpHeaderText">
           <div class="hpHeaderText">
             <h1 class="hpHeaderText">Fluid jumbotron</h1>

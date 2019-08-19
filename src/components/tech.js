@@ -2,50 +2,50 @@ import React, { Component } from "react";
 // import Blog from './components/blog';
 import "../App.css";
 
-class SocialPost1 extends React.Component {
+class TechPost1 extends React.Component {
   state = {
-    socialPosts: [
+    techPosts: [
       {
         id: 1,
-        image: require("../assets/artificial-intelligence-200x200.jpg"),
+        image: require("../assets/tech1.jpg"),
         date: "",
-        title: "the artificial intelligence takeover",
-        tag: "social media",
+        title: "THE ADVERTISING WAR: DIGITAL FINALLY TRIUMPSH OVER TRADIONAL AND PRINT",
+        tag: "technology",
         article: "blah blah blah"
       },
       {
         id: 1,
-        image: require("../assets/tech.jpg"),
+        image: require("../assets/tech2.jpg"),
         date: "",
-        title: "will amazon scout be the future of delivery service",
-        tag: "social media",
+        title: "BRANDS ARE ALL ABOUT FAKE NEWS ON APRIL FOOLS' DAY",
+        tag: "technology",
         article: "blah blah blah"
       },
       {
         id: 1,
-        image: require("../assets/apps.jpg"),
+        image: require("../assets/tech3.jpg"),
         date: "",
-        title: "4 apps you need to survive the holiday season",
-        tag: "social media",
+        title: "SOUTH BY SOUTHWEST CONTINUES ANOTHER YEAR OF ENTERTAINMENT, BRAND ACTIVATION AND GROWTH IN AUSTIN, TEXAS",
+        tag: "technology",
         article: "blah blah blah"
       },
       {
         id: 1,
-        image: require("../assets/cms.jpg"),
+        image: require("../assets/tech4.jpg"),
         date: "",
-        title: "beginner's guide to cms: make it work for you",
-        tag: "social media",
+        title: "SONIC BRANDING: WHY LEVERAGE SOUND FOR YOUR BUSINESS",
+        tag: "technology",
         article: "blah blah blah"
       }
     ]
   };
 
   render() {
-    console.log(this.state.social);
+    console.log(this.state.techPosts);
     return (
       //if category clicked map through category posts and render all articles with an id of 1
 
-      this.state.socialPosts.map(blog => (
+      this.state.techPosts.map(blog => (
         <div class="m-2 blogPost">
           <img src={blog.image} />
           <h3 className="blogArticles mt-4">{blog.title}</h3>
@@ -56,4 +56,4 @@ class SocialPost1 extends React.Component {
   }
 }
 
-export default SocialPost1;
+export default TechPost1;
