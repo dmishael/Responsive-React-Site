@@ -4,6 +4,7 @@ import BlogPosts from "./blogPosts.js"
 import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
+import Quiz from "./quiz.js"
 
 class Home extends Component {
   state = {
@@ -243,8 +244,8 @@ class Home extends Component {
           </div>
         </div>
         // We're pretty cool'
-        <div class="quizPlaceholder d-flex justify-content-center">
-          Quiz Placeholder
+        <div>
+          <Quiz/>
         </div>
         // We know alot too
         <div class="p-3">
