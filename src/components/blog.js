@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import SocialPost1 from "./components/social";
+
 
 class Blog extends Component {
   state = {
@@ -34,7 +34,7 @@ class Blog extends Component {
   render() {
     return (
       <div className="Blog">
-        <SocialPost1 blogPosts={this.state.social} />
+      
       </div>
     );
   }

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
 import AboutSlider from "./aboutSlider.js";
-import SocialPost1 from "./social.js"
+
 import BlogPosts from "./blogPosts.js"
 
 class Capabilities extends Component {
