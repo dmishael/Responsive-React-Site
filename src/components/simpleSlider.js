@@ -12,8 +12,17 @@ class SimpleSlider extends React.Component {
       autoplaySpeed: 2000,
       arrows: true,
       infinite: true,
-      speed: 400
-    };
+      speed: 400,
+      centerMode: true,
+      responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }}
+        ]}
+
     return (
       <section class="slick">
         <Slider {...settings} height="150px" id="slideshow">

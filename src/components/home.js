@@ -16,7 +16,7 @@ class Home extends Component {
   };
 
   render() {
-    // console.log(this.props)
+
 
     return (
       <div className="Home">
@@ -86,7 +86,7 @@ class Home extends Component {
             />
           </div>
         </div>
-        // Phrenoklogy or Frenik?
+
         <div class="card bg-light cardBlock m-auto justify-content-center shadow p-3 mb-5 bg-white">
           <div>
             <h5 class="card-title text-center dictionary">
@@ -117,87 +117,85 @@ class Home extends Component {
             type="video/mp4"
           />
         </video>
-        // slick slider //{" "}
-        <section id="slideshow">
-          //{" "}
+
+
           <div class="slick">
             <SimpleSlider />
-            //{" "}
+
           </div>
-          //{" "}
-        </section>
-        // We do alot for you
+
+
         <div class="p-3">
-          <div class="pt-2 mt-5  d-flex justify-content-center weDoAlot">
+          <div class="pt-2 mt-5 weDoAlot">
             we do a lot. we can do a lot for you.
           </div>
 
-          <div class="pt-2 mt-5 mb-5 dictionaryFrenikText d-flex justify-content-center">
+          <div class="pt-2 mt-2 mb-5 dictionaryFrenikText">
             Whether we are working one-off projects or acting as your bolt-on
             marketing department, our approach is the same.
           </div>
 
           <div class="row row-fluid flex-grid weDo">
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">tell your story</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Branding</li>
-                <li class="pt-2">PR</li>
-                <li class="pt-2">Social</li>
-              </ul>
+            <div class="border-right mb-5 pb-5 ">
+              <ul class="whatWeDoH mb-2 mr-5">tell your story</ul>
+
+                <li class="pt-2 whatWeDoText">Branding</li>
+                <li class="pt-2 whatWeDoText">PR</li>
+                <li class="pt-2 whatWeDoText">Social</li>
+
               <a class="mt-5 ml-3 d-flex justify-content-bottom" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">make all the things</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Creative Services</li>
-                <li class="pt-2">Video Production</li>
-                <li class="pt-2">Technology Development</li>
-              </ul>
+            <div class="border-right mb-5 pb-5 mr-5">
+              <ul class="whatWeDoH mb-2">make all the things</ul>
+
+                <li class="pt-2 whatWeDoText">Creative Services</li>
+                <li class="pt-2 whatWeDoText">Video Production</li>
+                <li class="pt-2 whatWeDoText">Technology Development</li>
+
               <a class="mt-5 pt-4 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">build loyalty & Growth</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">SEO & SEM</li>
-                <li class="pt-2">Digital Advertising</li>
-                <li class="pt-2">Traditional Media</li>
-                <li class="pt-2">Experiential Marketing</li>
-              </ul>
+            <div class="border-right mb-5 pb-5 mr-5">
+              <ul class="whatWeDoH mb-2">build loyalty & Growth</ul>
+
+                <li class="pt-2 whatWeDoText">SEO & SEM</li>
+                <li class="pt-2 whatWeDoText">Digital Advertising</li>
+                <li class="pt-2 whatWeDoText">Traditional Media</li>
+                <li class="pt-2 whatWeDoText">Experiential Marketing</li>
+
               <a class="mt-5 pt-3 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class=" mb-5 pb-5 mr-3 col">
-              <h1 class="whatWeDoH ml-2 mb-2">tell your story</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Full ROI Reporting</li>
-                <li class="pt-2">
+            <div class=" mb-5 pb-5 mr-5 col">
+              <ul class="whatWeDoH mb-2">tell your story</ul>
+
+                <li class="pt-2 whatWeDoText">Full ROI Reporting</li>
+                <li class="pt-2 whatWeDoText">
                   Actionable Intelligence with Recommendations
                 </li>
-                <li class="pt-2">Consulting</li>
-              </ul>
+                <li class="pt-2 whatWeDoText">Consulting</li>
+
               <a class="mt-5 pt-5 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
           </div>
         </div>
-        // We make great work
+
         <div class="weMakeGreatWork align-middle d-flex justify-content-around">
           <p class="weDoAlot m-5">we make great work</p>
         </div>
         <div class="">
           <HomeSlider />
         </div>
-        // We're pretty cool'
+
         <div class="p-3 weCool">
           <div class="p-5 m-5 weDoAlot d-flex justify-content-center">
             we're pretty cool
@@ -243,11 +241,11 @@ class Home extends Component {
             />
           </div>
         </div>
-        // We're pretty cool'
+
         <div>
           <Quiz/>
         </div>
-        // We know alot too
+
         <div class="p-3">
           <div class="pt-2 mt-5  d-flex justify-content-center weDoAlot">
             we know a lot, too
@@ -312,16 +310,8 @@ class Home extends Component {
           </div>
         </div>
 
-        <div class=" ml-4 hpHeader hpHeaderText">
-          <div class="hpHeaderText">
-            <h1 class="hpHeaderText">Fluid jumbotron</h1>
-            <p class="lead">
-              This is a modified jumbotron that occupies the entire horizontal
-              space of its parent.
-            </p>
-          </div>
-        </div>{" "}
-        -->
+
+
         <footer>
           <div class="pt-4 d-flex justify-content-center">
             <a class="p-4 bd-highlight" href="#">

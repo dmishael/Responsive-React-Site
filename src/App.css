@@ -1,19 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.Blog {
-  color: blue;
-}
 
 @font-face {
   font-family: myFirstFont;
   src: url(https://www.gfxfile.com/90e/Azo.Sans.OTF.zip);
 }
 
+html.body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.home {
+  overflow-x: hidden;
+}
+
 body {
-  font-family: azo-sans-web, sans-serif;
+  font-family: azo-sans, sans-serif;
   font-style: normal;
   color: #c2c2c2;
 }
@@ -70,10 +74,12 @@ a {
 /* hpheader */
 
 .hpHeader {
+  width: 100%;
   display: grid;
-  grid-template-columns: 20% 50% 25%;
+  grid-template-columns: 25% 50% 25%;
   grid-template-rows: 20% 20% 20% 20% 20%;
 }
+
 
 .hamburger {
   grid-column: 3;
@@ -138,9 +144,11 @@ a {
 }
 
 .dictionaryFrenikText {
+  text-align: center;
   color: #131516;
-  font: 16px;
+  font-size: 16px;
   font-weight: 200;
+  letter-spacing: 1px;
 }
 
 /* yearInReview */
@@ -179,9 +187,10 @@ a {
 
 
 .clientSlider {
-  width: 90%;
-  height: 100%;
+  height: 100px;
+  width: 150px;
   object-fit: contain;
+  margin: auto;
 }
 
 
@@ -190,10 +199,11 @@ a {
 }
 .weDoAlot {
   text-transform: uppercase;
-  font-size: 32px;
+  text-align: center;
+  font-size: 28px;
   font-style: azo-sans;
   color:  #131516;
-  font-weight: 450;
+  font-weight: 600;
   letter-spacing: 4px;
 }
 
@@ -203,7 +213,8 @@ a {
   text-transform: uppercase;
   font-size: 18px;
   color:  #000000;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .blogPost {
@@ -237,7 +248,8 @@ a {
 
 .whatWeDoText {
   color: #373D3F;
-  font: 16px Azo-sans-web sans-serif;
+  font-style: azo-sans;
+  font-size: 16px;
   font-weight: 300;
   list-style-position: inside;
 }
@@ -247,8 +259,6 @@ a {
   font-size: 12px;
   border-bottom: 2px solid yellowgreen;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
 }
 
 .internalButton2 {
@@ -256,6 +266,16 @@ a {
   font-size: 12px;
   border-bottom: 2px solid yellowgreen;
   text-transform: uppercase;
+}
+/* we know Alot too */
+
+.weKnowAlotNav {
+  max-width: 375px;
+
+}
+
+.weKnowAlotButtons {
+
 }
 
 /* we make great work */

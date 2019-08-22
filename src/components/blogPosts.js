@@ -161,9 +161,10 @@ class BlogPosts extends Component {
 
     return (
       <div>
-        <div class="d-flex justify-content-center">
+        <div class="weKnowAlotNav">
+        <div class="weKnowAlotButtons mt-3">
           <button
-            class="m-5"
+            class="m-2"
             onClick={() => {
               this.setState({ social: true });
               this.setState({ technology: false });
@@ -175,7 +176,7 @@ class BlogPosts extends Component {
           </button>
 
           <button
-            class="m-5"
+            class="m-2"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: true });
@@ -187,7 +188,7 @@ class BlogPosts extends Component {
           </button>
 
           <button
-            class="m-5"
+            class="m-2"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: false });
@@ -199,7 +200,7 @@ class BlogPosts extends Component {
           </button>
 
           <button
-            class="m-5"
+            class="m-2"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: false });
@@ -209,6 +210,7 @@ class BlogPosts extends Component {
           >
             VIDEOS
           </button>
+        </div>
         </div>
 
         <div class="row d-flex justify-content-center blogPost mt-3 mb-3">

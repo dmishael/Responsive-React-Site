@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
 import AboutSlider from "./aboutSlider.js";
+import Quiz from "./quiz.js"
 
 import BlogPosts from "./blogPosts.js"
 
@@ -152,26 +153,15 @@ class Capabilities extends Component {
 
 </div>
 
-<div class="howCanWeHelp">
-  <div class="pt-5 mt-5  d-flex justify-content-center weDoAlotCapabilities">
-    we want to meet you!
+
+
+
+
+
+  <div>
+    <Quiz/>
   </div>
 
-  <p class="pt-3 mt-3 d-flex justify-content-center weDoAlotCapabilitiesText">
-    Help us learn your business.
-  </p>
-
-
-
-
-  <div class="container mt-5 pt-5 mb-5 pb-5">
-    <div class="row">
-      <div class="col text-center">
-        <button class="btn btn-outline-warning">Start Quiz</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div>
   <BlogPosts/>
