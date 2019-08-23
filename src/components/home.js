@@ -3,6 +3,7 @@ import "../App.css";
 import BlogPosts from "./blogPosts.js"
 import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
+import SliderTwo from "./sliderTwo.js";
 import HomeSlider from "./homeSlider.js";
 import Quiz from "./quiz.js"
 
@@ -89,13 +90,13 @@ class Home extends Component {
 
         <div class="card bg-light cardBlock m-auto justify-content-center shadow p-3 mb-5 bg-white">
           <div>
-            <h5 class="card-title text-center dictionary">
+            <h5 class="text-center dictionary m-3">
               /frəˈnäləjē ər frəˈnik?/
             </h5>
-            <h5 class="card-title text-center dictionaryFrenik">
+            <div class="text-center phrenik m-3">
               PHRENOLOGY OR FRENIK?
-            </h5>
-            <p class="card-text text-center dictionaryFrenikText">
+            </div>
+            <p class="card-text text-center dictionaryFrenikText m-4">
               Our name comes from one of the most notorious pieces of
               pseudoscience in history: Phrenology – the practice of measuring
               the skull to determine personality and acumen. Since we are in the
@@ -108,7 +109,7 @@ class Home extends Component {
         </div>
         <video
           width="100%"
-          height="670px"
+          height="auto"
           poster={require("../assets/yearinreview_thumbnail.png")}
           controls
         >
@@ -126,7 +127,7 @@ class Home extends Component {
 
 
         <div class="p-3">
-          <div class="pt-2 mt-5 weDoAlot">
+          <div class="pt-2 mt-2 weDoAlot">
             we do a lot. we can do a lot for you.
           </div>
 
@@ -135,52 +136,53 @@ class Home extends Component {
             marketing department, our approach is the same.
           </div>
 
-          <div class="row row-fluid flex-grid weDo">
-            <div class="border-right mb-5 pb-5 ">
-              <ul class="whatWeDoH mb-2 mr-5">tell your story</ul>
+          <div class="d-flex justify-content-center">
+          <div class="row row-fluid flex-grid weDo ml-2">
+            <div class="border-left mb-5 pb-5 mr-5">
+              <ul class="whatWeDoH mb-2 mr-5 ml-2">tell your story</ul>
 
-                <li class="pt-2 whatWeDoText">Branding</li>
-                <li class="pt-2 whatWeDoText">PR</li>
-                <li class="pt-2 whatWeDoText">Social</li>
+                <li class="pt-2 ml-3 whatWeDoText">Branding</li>
+                <li class="pt-2 ml-3 whatWeDoText">PR</li>
+                <li class="pt-2 ml-3 whatWeDoText">Social</li>
 
               <a class="mt-5 ml-3 d-flex justify-content-bottom" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class="border-right mb-5 pb-5 mr-5">
-              <ul class="whatWeDoH mb-2">make all the things</ul>
+            <div class="border-left mb-5 pb-5 mr-5">
+              <ul class="whatWeDoH mb-2 ml-2">make all the things</ul>
 
-                <li class="pt-2 whatWeDoText">Creative Services</li>
-                <li class="pt-2 whatWeDoText">Video Production</li>
-                <li class="pt-2 whatWeDoText">Technology Development</li>
+                <li class="pt-2 ml-3 whatWeDoText">Creative Services</li>
+                <li class="pt-2 ml-3 whatWeDoText">Video Production</li>
+                <li class="pt-2 ml-3 whatWeDoText">Technology Development</li>
 
               <a class="mt-5 pt-4 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class="border-right mb-5 pb-5 mr-5">
-              <ul class="whatWeDoH mb-2">build loyalty & Growth</ul>
+            <div class="border-left mb-5 pb-5 mr-5">
+              <ul class="whatWeDoH mb-2 ml-2">build loyalty & Growth</ul>
 
-                <li class="pt-2 whatWeDoText">SEO & SEM</li>
-                <li class="pt-2 whatWeDoText">Digital Advertising</li>
-                <li class="pt-2 whatWeDoText">Traditional Media</li>
-                <li class="pt-2 whatWeDoText">Experiential Marketing</li>
+                <li class="pt-2 ml-3 whatWeDoText">SEO & SEM</li>
+                <li class="pt-2 ml-3 whatWeDoText">Digital Advertising</li>
+                <li class="pt-2 ml-3 whatWeDoText">Traditional Media</li>
+                <li class="pt-2 ml-3 whatWeDoText">Experiential Marketing</li>
 
               <a class="mt-5 pt-3 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
               </a>
             </div>
 
-            <div class=" mb-5 pb-5 mr-5 col">
-              <ul class="whatWeDoH mb-2">tell your story</ul>
+            <div class="border-left mb-5 pb-5 mr-5 col">
+              <ul class="whatWeDoH mb-2 ml-2">tell your story</ul>
 
-                <li class="pt-2 whatWeDoText">Full ROI Reporting</li>
-                <li class="pt-2 whatWeDoText">
+                <li class="pt-2 ml-3 whatWeDoText">Full ROI Reporting</li>
+                <li class="pt-2 ml-3 whatWeDoText">
                   Actionable Intelligence with Recommendations
                 </li>
-                <li class="pt-2 whatWeDoText">Consulting</li>
+                <li class="pt-2 ml-3 whatWeDoText">Consulting</li>
 
               <a class="mt-5 pt-5 ml-3 d-flex justify-content-right" href="#">
                 <p class="internalButton">see more</p>
@@ -188,45 +190,52 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        </div>
+
 
         <div class="weMakeGreatWork align-middle d-flex justify-content-around">
           <p class="weDoAlot m-5">we make great work</p>
         </div>
-        <div class="">
-          <HomeSlider />
+        <div class="slick">
+          <SliderTwo />
+
         </div>
 
-        <div class="p-3 weCool">
+
+        <div class="weCool">
           <div class="p-5 m-5 weDoAlot d-flex justify-content-center">
             we're pretty cool
           </div>
 
-          <div class="row row-fluid flex-grid weDo mb-2 pb-2">
-            <div class="border-right col">
+          <div class="centered">
+          <div class="row row-fluid flex-grid weDo ml-2">
+            <div class=" col-sm-12 col-md-3 ml-3 mr-5 mt-2">
               <h1 class="whatWeDoH ml-2 mb-2">curious</h1>
-              <p class=" ml-2">
+              <p class="weCoolText ml-2">
                 We love exploring and don’t settle for quick, easy or obvious
                 answers; we know they are often wrong.{" "}
               </p>
             </div>
 
-            <div class="border-right col">
+            <div class="border-left col-sm-12 col-md-3 ml-3 mr-5 mt-2">
               <h1 class="whatWeDoH ml-2 mb-2">optimistic</h1>
-              <p class=" ml-2">
+              <p class="weCoolText ml-2">
                 We never met a challenge we didn’t like. No matter the problem,
                 there’s always at least one way to solve it.{" "}
               </p>
             </div>
 
-            <div class="col">
+            <div class="border-left col-sm-12 col-md-3 ml-3 mr-5 mt-2">
               <h1 class="whatWeDoH ml-2 mb-2">real talk</h1>
-              <p class="ml-2">
+              <p class="weCoolText ml-2">
                 Our clients tell us this, so we decided to tell you: our
                 approach is grounded and lacks the fluff and woo of other
                 agencies.{" "}
               </p>
             </div>
           </div>
+          </div>
+
           <div class="pt-4">
             <a class="mt-5 pt-3 weDo d-flex justify-content-center" href="#">
               <span class="internalButton">meet our team</span>
@@ -240,7 +249,9 @@ class Home extends Component {
               alt="arrow"
             />
           </div>
+
         </div>
+
 
         <div>
           <Quiz/>
@@ -251,63 +262,11 @@ class Home extends Component {
             we know a lot, too
           </div>
 
+
           <div>
             <BlogPosts/>
           </div>
 
-
-          <div class="row row-fluid flex-grid weDo">
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">tell your story</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Branding</li>
-                <li class="pt-2">PR</li>
-                <li class="pt-2">Social</li>
-              </ul>
-              <a class="mt-5 ml-3 d-flex justify-content-bottom" href="#">
-                <p class="internalButton">see more</p>
-              </a>
-            </div>
-
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">make all the things</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Creative Services</li>
-                <li class="pt-2">Video Production</li>
-                <li class="pt-2">Technology Development</li>
-              </ul>
-              <a class="mt-5 pt-4 ml-3 d-flex justify-content-right" href="#">
-                <p class="internalButton">see more</p>
-              </a>
-            </div>
-
-            <div class="border-right mb-5 pb-5 col">
-              <h1 class="whatWeDoH ml-2 mb-2">build loyalty & Growth</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">SEO & SEM</li>
-                <li class="pt-2">Digital Advertising</li>
-                <li class="pt-2">Traditional Media</li>
-                <li class="pt-2">Experiential Marketing</li>
-              </ul>
-              <a class="mt-5 pt-3 ml-3 d-flex justify-content-right" href="#">
-                <p class="internalButton">see more</p>
-              </a>
-            </div>
-
-            <div class=" mb-5 pb-5 mr-3 col">
-              <h1 class="whatWeDoH ml-2 mb-2">tell your story</h1>
-              <ul class="whatWeDoText ml-4">
-                <li class="pt-2">Full ROI Reporting</li>
-                <li class="pt-2">
-                  Actionable Intelligence with Recommendations
-                </li>
-                <li class="pt-2">Consulting</li>
-              </ul>
-              <a class="mt-5 pt-5 ml-3 d-flex justify-content-right" href="#">
-                <p class="internalButton">see more</p>
-              </a>
-            </div>
-          </div>
         </div>
 
 
@@ -343,7 +302,9 @@ class Home extends Component {
               />
             </a>
           </div>
-          <div class=" d-flex justify-content-center">
+          <div class="weKnowAlotNav">
+          <div class="row">
+            <div class="footer2">
             <a class="p-4 bd-highlight footerlinks" href="#">
               Work
             </a>
@@ -356,7 +317,9 @@ class Home extends Component {
             <a class="p-4 bd-highlight footerlinks" href="#">
               Resources
             </a>
+            </div>
           </div>
+        </div>
           <div class="pt-3 d-flex justify-content-center">
             <p>
               855.937.3645 |{" "}

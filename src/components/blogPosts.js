@@ -162,9 +162,9 @@ class BlogPosts extends Component {
     return (
       <div>
         <div class="weKnowAlotNav">
-        <div class="weKnowAlotButtons mt-3">
-          <button
-            class="m-2"
+        <div class="m-5 row">
+          <a
+            class="m-2 weKnowButtons"
             onClick={() => {
               this.setState({ social: true });
               this.setState({ technology: false });
@@ -173,10 +173,10 @@ class BlogPosts extends Component {
             }}
           >
             SOCIAL MEDIA
-          </button>
+          </a>
 
-          <button
-            class="m-2"
+          <a
+            class="m-2 weKnowButtons"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: true });
@@ -185,10 +185,10 @@ class BlogPosts extends Component {
             }}
           >
             TECHNOLOGY
-          </button>
+          </a>
 
-          <button
-            class="m-2"
+          <a
+            class="m-2 weKnowButtons"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: false });
@@ -197,10 +197,10 @@ class BlogPosts extends Component {
             }}
           >
             INDUSTRY NEWS
-          </button>
+          </a>
 
-          <button
-            class="m-2"
+          <a
+            class="m-2 weKnowButtons"
             onClick={() => {
               this.setState({ social: false });
               this.setState({ technology: false });
@@ -209,7 +209,7 @@ class BlogPosts extends Component {
             }}
           >
             VIDEOS
-          </button>
+          </a>
         </div>
         </div>
 
