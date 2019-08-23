@@ -23,7 +23,7 @@ class Home extends Component {
       <div className="Home">
         <div class="homepageHero hpHeader">
           <nav class="navbar position navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img
                 src={require("../assets/frenik_grey_logo.png")}
                 class="fmglogo"
@@ -45,22 +45,22 @@ class Home extends Component {
             >
               <ul class="navbar-nav">
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/work">
                     Work
                   </a>
                 </li>
                 <li class="m-5 nav-i   tem">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/capabilities">
                     Capabilities
                   </a>
                 </li>
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/about">
                     About
                   </a>
                 </li>
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/resources">
                     Resources
                   </a>
                 </li>
@@ -145,7 +145,7 @@ class Home extends Component {
                 <li class="pt-2 ml-3 whatWeDoText">PR</li>
                 <li class="pt-2 ml-3 whatWeDoText">Social</li>
 
-              <a class="mt-5 ml-3 d-flex justify-content-bottom" href="#">
+              <a class="mt-5 ml-3 d-flex justify-content-bottom" href="/resources">
                 <p class="internalButton">see more</p>
               </a>
             </div>
@@ -157,7 +157,7 @@ class Home extends Component {
                 <li class="pt-2 ml-3 whatWeDoText">Video Production</li>
                 <li class="pt-2 ml-3 whatWeDoText">Technology Development</li>
 
-              <a class="mt-5 pt-4 ml-3 d-flex justify-content-right" href="#">
+              <a class="mt-5 pt-4 ml-3 d-flex justify-content-right" href="/resources">
                 <p class="internalButton">see more</p>
               </a>
             </div>
@@ -170,7 +170,7 @@ class Home extends Component {
                 <li class="pt-2 ml-3 whatWeDoText">Traditional Media</li>
                 <li class="pt-2 ml-3 whatWeDoText">Experiential Marketing</li>
 
-              <a class="mt-5 pt-3 ml-3 d-flex justify-content-right" href="#">
+              <a class="mt-5 pt-3 ml-3 d-flex justify-content-right" href="/resources">
                 <p class="internalButton">see more</p>
               </a>
             </div>
@@ -184,7 +184,7 @@ class Home extends Component {
                 </li>
                 <li class="pt-2 ml-3 whatWeDoText">Consulting</li>
 
-              <a class="mt-5 pt-5 ml-3 d-flex justify-content-right" href="#">
+              <a class="mt-5 pt-5 ml-3 d-flex justify-content-right" href="/resources">
                 <p class="internalButton">see more</p>
               </a>
             </div>
@@ -237,7 +237,7 @@ class Home extends Component {
           </div>
 
           <div class="pt-4">
-            <a class="mt-5 pt-3 weDo d-flex justify-content-center" href="#">
+            <a class="mt-5 pt-3 weDo d-flex justify-content-center" href="/about">
               <span class="internalButton">meet our team</span>
             </a>
           </div>
@@ -305,16 +305,16 @@ class Home extends Component {
           <div class="weKnowAlotNav">
           <div class="row">
             <div class="footer2">
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/work">
               Work
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/capabilities">
               Capabilities
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="'/about">
               About
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/resources">
               Resources
             </a>
             </div>

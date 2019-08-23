@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
 import ResourcesSlider from "./resourcesCarousel.js";
-// import AboutSliderLogos from "./aboutSliderLogos.js";
+
 
 class Resources extends Component {
   state = {
@@ -45,13 +45,13 @@ class Resources extends Component {
   };
 
   render() {
-    // console.log(this.props.social)
+
     return (
       <div className="Resources">
         <div class="resourcesHero wpHeader">
-          // nav bar
+
           <nav class="navbar position navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img
                 src={require("../assets/frenik_grey_logo.png")}
                 class="fmglogo"
@@ -73,33 +73,33 @@ class Resources extends Component {
             >
               <ul class="navbar-nav">
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/work">
                     Work
                   </a>
                 </li>
-                <li class="m-5 nav-i   tem">
-                  <a class="navLink" href="#">
+                <li class="m-5 nav-item">
+                  <a class="navLink" href="/capabilities">
                     Capabilities
                   </a>
                 </li>
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/about">
                     About
                   </a>
                 </li>
                 <li class="m-5 nav-item">
-                  <a class="navLink" href="#">
+                  <a class="navLink" href="/resources">
                     Resources
                   </a>
                 </li>
               </ul>
             </div>
           </nav>
-          // end nav bar // header
-          <div class="pb-2 mb-2 wpHeaderText1 resourcesHeader d-flex justify-content-center">
+
+          <div class="pb-2 mb-5 wpHeaderText1 text-center">
             the more you know
           </div>
-          <div class="pt-4 mt-5 wpHeaderText2 text-center">
+          <div class="pt-4 mt-5 my-auto wpHeaderText2 text-center">
             Are you the kind of person who likes to learn and challenge
             conventional wisdom? Us, too. We think you’ll like these.
           </div>
@@ -116,7 +116,7 @@ class Resources extends Component {
 
           <div class="col-sm-2">
             <div class="resourcesHeaderLinks">
-              <a href="#" class="center-align">
+              <a href="/blog/social" class="center-align">
                 social media
               </a>
             </div>
@@ -124,7 +124,7 @@ class Resources extends Component {
 
           <div class="col-sm-2">
             <div class="resourcesHeaderLinks">
-              <a href="#" class="center-align">
+              <a href="blog/technology" class="center-align">
                 technology
               </a>
             </div>
@@ -132,7 +132,7 @@ class Resources extends Component {
 
           <div class="col-sm-2">
             <div class="resourcesHeaderLinks">
-              <a href="#" class="center-align">
+              <a href="blog/industry" class="center-align">
                 industry news
               </a>
             </div>
@@ -140,7 +140,7 @@ class Resources extends Component {
 
           <div class="col-sm-2">
             <div class="resourcesHeaderLinks">
-              <a href="#" class="center-align">
+              <a href="blog/video" class="center-align">
                 video
               </a>
             </div>
@@ -172,8 +172,9 @@ class Resources extends Component {
                 />
               </div>
               <div class="col-md-8 ">
-                <div class="card-body">
-                  <div class="blogPostTitle mt-5">
+                <div class="card-body mt-5">
+                  <h5 class=" resourcesTitle">{this.state.socialPosts[1].tag}</h5>
+                  <div class="blogPostTitle mt-5 my-auto">
                     {this.state.socialPosts[0].title}
                   </div>
                   <a class="mt-5 d-flex justify-content-bottom" href="#">
@@ -234,7 +235,7 @@ class Resources extends Component {
             <hr class="line mb-5 mt-5"/>
           </div>
 
-          <div class="align-bottom blogTitle ">Trending Now</div>
+          <div class="align-bottom blogTitle mt-5">Trending Now</div>
 
           <div class="card">
             <div class="row no-gutters">
@@ -246,8 +247,9 @@ class Resources extends Component {
                 />
               </div>
               <div class="col-md-8 ">
-                <div class="card-body">
-                  <div class="blogPostTitle mt-5">
+                <div class="card-body mt-5">
+                  <h5 class=" resourcesTitle">{this.state.socialPosts[1].tag}</h5>
+                  <div class="blogPostTitle ">
                     {this.state.socialPosts[0].title}
                   </div>
                   <a class="mt-5 d-flex justify-content-bottom" href="#">
@@ -343,16 +345,16 @@ class Resources extends Component {
             </a>
           </div>
           <div class=" d-flex justify-content-center">
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/work">
               Work
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/capabilities">
               Capabilities
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/about">
               About
             </a>
-            <a class="p-4 bd-highlight footerlinks" href="#">
+            <a class="p-4 bd-highlight footerlinks" href="/resources">
               Resources
             </a>
           </div>

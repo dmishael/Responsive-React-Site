@@ -179,22 +179,22 @@ class BlogPageTechnology extends Component {
           >
             <ul class="navbar-nav">
               <li class="m-5 nav-item">
-                <a class="navLink" href="#">
+                <a class="navLink" href="/work">
                   Work
                 </a>
               </li>
               <li class="m-5 nav-i   tem">
-                <a class="navLink" href="#">
+                <a class="navLink" href="/capabilities">
                   Capabilities
                 </a>
               </li>
               <li class="m-5 nav-item">
-                <a class="navLink" href="#">
+                <a class="navLink" href="/about">
                   About
                 </a>
               </li>
               <li class="m-5 nav-item">
-                <a class="navLink" href="#">
+                <a class="navLink" href="/resources">
                   Resources
                 </a>
               </li>
@@ -204,7 +204,7 @@ class BlogPageTechnology extends Component {
         <div class="blogStarter"></div>
         <div class="blogMain">
           <div class="blogTitle">Technology</div>
-          <div class="blogPost container-fluid p-0">
+          <div class="blogPost container-fluid p-0 mt-5">
             <div class="card">
               <div class="row no-gutters">
                 <div class="col-md-4">

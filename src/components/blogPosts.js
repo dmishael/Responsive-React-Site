@@ -5,7 +5,7 @@ import "../App.css";
 
 class BlogPosts extends Component {
   state = {
-    social: false,
+    social: true,
     socialPosts: [
       {
         id: 1,

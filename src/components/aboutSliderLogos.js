@@ -9,7 +9,15 @@ class AboutSliderLogos extends React.Component {
       slidesToShow: 5,
       no_wrap: true,
       autoplay: false,
-    };
+      responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }}
+        ]}
+
     return (
       <section class="slick">
         <Slider {...settings} height="150px" id="slideshow">

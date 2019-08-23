@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import SimpleSlider from "./simpleSlider.js";
 import HomeSlider from "./homeSlider.js";
 import AboutSlider from "./aboutSlider.js";
+import Quiz2 from "./quiz2.js"
 
 class Work extends Component {
 
@@ -16,7 +17,7 @@ class Work extends Component {
     // nav bar
 
     <nav className="navbar position navbar-expand-lg navbar-dark bg-transparent">
-      <a className="navbar-brand" href="#"> <img src={require("../assets/frenik_grey_logo.png")} className="fmglogo" alt="frenik logo"/> </a>
+      <a className="navbar-brand" href="/"> <img src={require("../assets/frenik_grey_logo.png")} className="fmglogo" alt="frenik logo"/> </a>
       <button className="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span className="navbar-toggler-icon"></span>
 
@@ -27,16 +28,16 @@ class Work extends Component {
       <div className="mr-5 collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <li className="m-5 nav-item">
-            <a className="navLink" href="#">Work</a>
-          </li>
-          <li className="m-5 nav-i   tem">
-            <a className="navLink" href="#">Capabilities</a>
+            <a className="navLink" href="/work">Work</a>
           </li>
           <li className="m-5 nav-item">
-            <a className="navLink" href="#">About</a>
+            <a className="navLink" href="/capabilities">Capabilities</a>
           </li>
           <li className="m-5 nav-item">
-            <a className="navLink" href="#">Resources</a>
+            <a className="navLink" href="/about">About</a>
+          </li>
+          <li className="m-5 nav-item">
+            <a className="navLink" href="/resources">Resources</a>
           </li>
         </ul>
       </div>
@@ -161,23 +162,12 @@ class Work extends Component {
     <source src={require("../assets/Frenik-Brand-Video.mp4")} type="video/mp4"/>
   </video>
 
-  <div className="p-5 m-5  d-flex justify-content-center weDoAlot">
-    we want to meet you!
+
+
+
+  <div>
+    <Quiz2 />
   </div>
-
-  <p className="d-flex justify-content-center">
-    Help us learn your business.
-  </p>
-
-
-
-<div className="container mt-5 pt-5 mb-5 pb-5">
-  <div className="row">
-    <div className="col text-center">
-      <button className="btn btn-outline-primary">Start Quiz</button>
-    </div>
-  </div>
-</div>
 
 
 <footer className="mt-5 pt-5">
@@ -188,10 +178,10 @@ class Work extends Component {
     <a className="p-4 bd-highlight" href="#"><img className="socialIcon" src={require("../assets/yticon.png")} alt="youtube"/></a>
   </div>
   <div className=" d-flex justify-content-center">
-    <a className="p-4 bd-highlight footerlinks" href="#">Work</a>
-    <a className="p-4 bd-highlight footerlinks" href="#">Capabilities</a>
-    <a className="p-4 bd-highlight footerlinks" href="#">About</a>
-    <a className="p-4 bd-highlight footerlinks" href="#">Resources</a>
+    <a className="p-4 bd-highlight footerlinks" href="/work">Work</a>
+    <a className="p-4 bd-highlight footerlinks" href="/capabilities">Capabilities</a>
+    <a className="p-4 bd-highlight footerlinks" href="/about">About</a>
+    <a className="p-4 bd-highlight footerlinks" href="/resources">Resources</a>
   </div>
   <div className="pt-3 d-flex justify-content-center">
     <p>855.937.3645 | <a className="email" href="mailto:someone@example.com">

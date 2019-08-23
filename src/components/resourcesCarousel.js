@@ -5,15 +5,24 @@ import "../App.css";
 class ResourcesSlider extends React.Component {
   render() {
     var settings = {
-      dots: true,
+
       slidesToShow: 4,
       slidesToScroll: 4,
       autoplay: true,
       autoplaySpeed: 2000,
       arrows: true,
       infinite: true,
-      speed: 400
-    };
+      speed: 400,
+      responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }}
+        ]}
+
+
     return (
       <section class="slick">
         <Slider {...settings}>

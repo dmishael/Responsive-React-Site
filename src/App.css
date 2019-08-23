@@ -210,11 +210,11 @@ a {
 .weDoAlot {
   text-transform: uppercase;
   text-align: center;
-  font-size: 24px;
+  font-size: 4rem;
   font-style: azo-sans;
   color:  #131516;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 6px;
 }
 
 /* We Can Do */
@@ -224,7 +224,7 @@ a {
   font-size: 18px;
   color:  #000000;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin-left: 2;
 
 }
@@ -385,8 +385,12 @@ a {
 
 /* clients */
 
+
+
+
+
 .workClients {
-  font-size: 14px;
+  font-size: 18px;
   font-style: azo-sans;
   color: #373D3F;
   font-weight: 400;
@@ -395,17 +399,30 @@ a {
 }
 
 .workClientImages {
-  height: 225px;
-  width: 203px;
+  height: 232px;
+  width: 258px;
   object-fit: cover;
+
 }
 
+.workClientImages2 {
+  height: 232px;
+  width: 258px;
+  object-fit: cover;
+
+}
 /* even more clients */
 
 .workClientLogos {
   height: 225px;
   width: 203px;
   border-bottom: 3px solid grey;
+  object-fit: contain;
+}
+
+.stretch {
+  height: 500px;
+  width: 700px;
   object-fit: contain;
 }
 
@@ -455,6 +472,7 @@ a {
   width: 75px;
 }
 
+
 #circleLogo {
   border: 4px solid #373D3F;
   background-color: #FFFFFF;
@@ -462,6 +480,7 @@ a {
   border-radius: 50%;
   width: 125px;
 }
+
 
 .wayWeWorkHeader {
   font-size: 18px;
@@ -474,11 +493,12 @@ a {
 }
 
 .wayWeWorkText {
-  font-size: 16px;
+  font-size: 22px;
   font-style: azo-sans;
   color: #373D3F;
   font-weight: 200;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .wayWeWorkLine {
@@ -569,6 +589,12 @@ a {
    transition: opacity 1s, visibility 1s;
 }
 
+.ourStuff {
+  object-fit: contain;
+
+
+}
+
 
 .imgWrap:hover .imgDescription {
   visibility: visible;
@@ -593,7 +619,7 @@ a {
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 600px;
 }
 
 .allHandsHero {
@@ -602,7 +628,7 @@ a {
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 600px;
 }
 
 .sparcHero{
@@ -611,7 +637,7 @@ a {
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 600px;
 }
 
 .pencilsHero{
@@ -620,7 +646,7 @@ a {
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 600px;
 }
 
 .aboutText {
@@ -750,10 +776,10 @@ color: #DADEDF;
   grid-column: 2;
   grid-row: 1;
   align-items: end;
-  font-size: 3rem;
+  font-size: 5rem;
   font-style: azo-sans;
   color: #343434;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
 
 }
@@ -780,7 +806,7 @@ color: #DADEDF;
 
 .blogPostTitle {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 1.4rem;
   color:  #000000;
   font-weight: 600;
 }
@@ -810,6 +836,14 @@ li {
   background: linear-gradient(0deg, #020024 0%, #22275d 35%, #222760 100%);
 }
 
+.quizGrid2 {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 40% 30% 30%;
+  height: 600px;
+  background: white;
+}
+
 
 .quizHeader {
   grid-column: 2;
@@ -823,12 +857,39 @@ li {
 
 
 }
+
+.quizHeader2 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: auto;
+  font-style: azo-sans;
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+
+
+}
+
 .quizSecondaryHeader {
   grid-column: 2;
   grid-row: 2;
   margin: auto;
   font-style: azo-sans;
   color: white;
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+.quizSecondaryHeader2 {
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+  font-style: azo-sans;
+  color: black;
   font-size: 19px;
   text-transform: uppercase;
   font-weight: 300;
@@ -870,6 +931,25 @@ li {
     color:  yellow;
 }
 
+.quizStartButton2 {
+    grid-column: 2;
+    grid-row: 3;
+    align-content: space-around;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    margin: auto;
+    outline: none;
+    height:  50px;
+    line-height:  40px;
+    border:  2px solid blue;
+    text-align: center;
+    width:  190px;
+    font-size:  18px;
+    font-style: azo-sans;
+    font-weight: 500;
+    color:  blue;
+}
+
 .quizAnswerSection {
   grid-column: 2;
   grid-row: 3;
@@ -893,5 +973,25 @@ li {
     font-style: azo-sans;
     font-weight: 600;
     color:  #38428C;
+
+}
+
+.quizAnswerChoice2 {
+    grid-column: 2;
+    grid-row: 3;
+    align-content: space-around;
+    background-color: white;
+    background-repeat:no-repeat;
+    margin: auto;
+    outline: none;
+    height:  50px;
+    line-height:  40px;
+    border:  2px solid blue;
+    text-align: center;
+    width:  190px;
+    font-size:  18px;
+    font-style: azo-sans;
+    font-weight: 600;
+    color:  blue;
 
 }

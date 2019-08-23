@@ -11,14 +11,14 @@ import BlogPosts from "./blogPosts.js"
 class Capabilities extends Component {
 
   render() {
-    // console.log(this.props.social)
+
     return (
       <div className="Capabilities">
       <div class="capabilitiesHero wpHeader">
 
-// nav bar
+
   <nav class="navbar position navbar-expand-lg navbar-dark bg-transparent">
-    <a class="navbar-brand" href="#"><img src={require("../assets/frenik_grey_logo.png")} class="fmglogo" alt="frenik logo"/> </a>
+    <a class="navbar-brand" href="/"><img src={require("../assets/frenik_grey_logo.png")} class="fmglogo" alt="frenik logo"/> </a>
     <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
 
@@ -29,24 +29,22 @@ class Capabilities extends Component {
     <div class="mr-5 collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="m-5 nav-item">
-          <a class="navLink" href="#">Work</a>
-        </li>
-        <li class="m-5 nav-i   tem">
-          <a class="navLink" href="#">Capabilities</a>
+          <a class="navLink" href="/work">Work</a>
         </li>
         <li class="m-5 nav-item">
-          <a class="navLink" href="#">About</a>
+          <a class="navLink" href="/capabilities">Capabilities</a>
         </li>
         <li class="m-5 nav-item">
-          <a class="navLink" href="#">Resources</a>
+          <a class="navLink" href="/about">About</a>
+        </li>
+        <li class="m-5 nav-item">
+          <a class="navLink" href="/resources">Resources</a>
         </li>
       </ul>
     </div>
   </nav>
 
-// end nav bar
 
-  //header
 
 
   <div class="pb-2 mb-2 wpHeaderText1 d-flex justify-content-center">
@@ -90,7 +88,7 @@ class Capabilities extends Component {
 </div>
 
 <div class="row mt-5">
-  <div class="col-md-6 pr-2">
+  <div class="col-md-6 pr-2 my-auto ">
     <h3 class="text-center text-md-left wayWeWorkHeader pr-5 mt-5"> help you find yourself & tell your story </h3>
     <ul class="text-center text-md-left wayWeWorkText pt-2">
       <hr class="min" width="20%" color="#D6DD29"/>
@@ -105,7 +103,7 @@ class Capabilities extends Component {
 </div>
 
 <div class="row">
-  <div class="col-md-6 order-md-first pl-5">
+  <div class="col-md-6 order-md-first pl-5 my-auto">
     <h3 class="text-center text-md-left wayWeWorkHeader mt-5"> make all the things for you </h3>
     <ul class="text-center text-md-left wayWeWorkText ">
       <hr class="min" width="20%" color="#D6DD29"/>
@@ -121,7 +119,7 @@ class Capabilities extends Component {
 </div>
 
 <div class="row mt-5">
-  <div class="col-md-6 pr-2">
+  <div class="col-md-6 pr-2 my-auto">
     <h3 class="text-center text-md-left wayWeWorkHeader pr-5 mt-5"> find new customers, improve loyalty </h3>
     <ul class="text-center text-md-left wayWeWorkText pt-2">
       <hr class="min" width="20%" color="#D6DD29"/>
@@ -137,7 +135,7 @@ class Capabilities extends Component {
 </div>
 
 <div class="row">
-  <div class="col-md-6 order-md-first pl-5">
+  <div class="col-md-6 order-md-first pl-5 my-auto">
     <h3 class="text-center text-md-left wayWeWorkHeader mt-5"> convert & inform </h3>
     <ul class="text-center text-md-left wayWeWorkText ">
       <hr class="min" width="20%" color="#D6DD29"/>
@@ -176,10 +174,10 @@ class Capabilities extends Component {
     <a class="p-4 bd-highlight" href="#"><img class="socialIcon" src={require("../assets/yticon.png")} alt="youtube"/></a>
   </div>
   <div class=" d-flex justify-content-center">
-    <a class="p-4 bd-highlight footerlinks" href="#">Work</a>
-    <a class="p-4 bd-highlight footerlinks" href="#">Capabilities</a>
-    <a class="p-4 bd-highlight footerlinks" href="#">About</a>
-    <a class="p-4 bd-highlight footerlinks" href="#">Resources</a>
+    <a class="p-4 bd-highlight footerlinks" href="/work">Work</a>
+    <a class="p-4 bd-highlight footerlinks" href="/capabilities">Capabilities</a>
+    <a class="p-4 bd-highlight footerlinks" href="/about">About</a>
+    <a class="p-4 bd-highlight footerlinks" href="/resources">Resources</a>
   </div>
   <div class="pt-3 d-flex justify-content-center">
     <p>855.937.3645 | <a class="email" href="mailto:someone@example.com">

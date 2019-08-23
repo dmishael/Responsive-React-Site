@@ -8,15 +8,15 @@ import AboutSliderLogos from "./aboutSliderLogos.js";
 class About extends Component {
 
   render() {
-    // console.log(this.props.social)
+
     return (
       <div className="About">
         <div class="aboutHero wpHeader">
 
-      // nav bar
+
 
       <nav class="navbar position navbar-expand-lg navbar-dark bg-transparent">
-        <a class="navbar-brand" href="#"><img src={require("../assets/frenik_grey_logo.png")} class="fmglogo" alt="frenik logo"/> </a>
+        <a class="navbar-brand" href="/"><img src={require("../assets/frenik_grey_logo.png")} class="fmglogo" alt="frenik logo"/> </a>
         <button class="hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
 
@@ -27,16 +27,16 @@ class About extends Component {
         <div class="mr-5 collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="m-5 nav-item">
-              <a class="navLink" href="#">Work</a>
+              <a class="navLink" href="/work">Work</a>
             </li>
             <li class="m-5 nav-i   tem">
-              <a class="navLink" href="#">Capabilities</a>
+              <a class="navLink" href="/capabilities">Capabilities</a>
             </li>
             <li class="m-5 nav-item">
-              <a class="navLink" href="#">About</a>
+              <a class="navLink" href="/about">About</a>
             </li>
             <li class="m-5 nav-item">
-              <a class="navLink" href="#">Resources</a>
+              <a class="navLink" href="/resources">Resources</a>
             </li>
           </ul>
         </div>
@@ -52,21 +52,21 @@ class About extends Component {
 
     </div>
 
-    <div class="">
+    <div class="col-sm-9 col-lg-7 mx-auto">
       <div class="pt-2 mt-5  d-flex justify-content-center weDoAlot">
         at frenik, we get it
       </div>
 
       <div class="row mt-5 p-3">
-        <div class="col-md-6 pr-2">
-          <p class="text-left text-md-left wayWeWorkText pt-2">
+        <div class="col-md-5 pr-2 my-auto">
+          <p class="text-left text-md-left  wayWeWorkText pt-2">
             You’ve likely been taken for a ride by some agency who claimed to deliver the world, but ultimately made a mess of both your brand and your budget.
           </p>
-          <p class="text-left text-md-left wayWeWorkText pt-2">
+          <p class="text-left text-md-left  wayWeWorkText pt-2">
             That’s because the world of Agency Marketing is rife with bad ideas and pseudoscience—ideas masquerading as scientifically-based, but which instead rely on emotion and “common sense” to fool us.
           </p>
         </div>
-        <img class="col-md-6 p-3" src={require("../assets/atFrenikWeGetIt.png")} alt="we get it"/>
+        <img class="col-md-7 p-3" src={require("../assets/atFrenikWeGetIt.png")} alt="we get it"/>
       </div>
 
       <div class="">
@@ -76,7 +76,7 @@ class About extends Component {
 
         <div class="row mt-5 p-3">
           <img class="col-md-6 p-3" src={require("../assets/theOnesWhoCheck.png")} alt="we get it"/>
-          <div class="col-md-6 pr-2">
+          <div class="col-md-6 pr-2 my-auto">
             <p class="text-left text-md-left wayWeWorkText pt-2">
               Driven by a team of curious, optimistic people, <strong> we don’t settle for the quick, easy or obvious answers</strong>; we know they are often wrong.
             </p>
@@ -171,8 +171,9 @@ class About extends Component {
         people like our stuff
       </div>
 
-      <div >
-        <img class="d-flex justify-content-center mr-0 ml-5" src={require("../assets/impact.png")}/>
+
+      <div class="m-5 d-flex justify-content-center ">
+        <img class="stretch" src={require("../assets/impact.png")}/>
       </div>
 
       <div class="p-5 m-5 hpHeaderText3 d-flex justify-content-center">
@@ -268,10 +269,10 @@ class About extends Component {
         <a class="p-4 bd-highlight" href="#"><img class="socialIcon" src={require("../assets/yticon.png")} alt="youtube"/></a>
       </div>
       <div class=" d-flex justify-content-center">
-        <a class="p-4 bd-highlight footerlinks" href="#">Work</a>
-        <a class="p-4 bd-highlight footerlinks" href="#">Capabilities</a>
-        <a class="p-4 bd-highlight footerlinks" href="#">About</a>
-        <a class="p-4 bd-highlight footerlinks" href="#">Resources</a>
+        <a class="p-4 bd-highlight footerlinks" href="/work">Work</a>
+        <a class="p-4 bd-highlight footerlinks" href="/capabilities">Capabilities</a>
+        <a class="p-4 bd-highlight footerlinks" href="/about">About</a>
+        <a class="p-4 bd-highlight footerlinks" href="/resources">Resources</a>
       </div>
       <div class="pt-3 d-flex justify-content-center">
         <p>855.937.3645 | <a class="email" href="mailto:someone@example.com">
