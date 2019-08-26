@@ -219,7 +219,7 @@ class BlogPosts extends Component {
                 <div class="m-2 blogPost">
                   <img src={blog.image} />
                   <h3 className="blogArticles mt-4">{blog.title}</h3>
-                  <a className="internalButton2" href="#">
+                  <a className="internalButton2" href="/resources">
                     see more
                   </a>
                 </div>
@@ -230,7 +230,7 @@ class BlogPosts extends Component {
                 <div class="m-2 blogPost">
                   <img src={blog.image} />
                   <h3 className="blogArticles mt-4">{blog.title}</h3>
-                  <a className="internalButton2" href="#">
+                  <a className="internalButton2" href="/resources">
                     see more
                   </a>
                 </div>
@@ -241,7 +241,7 @@ class BlogPosts extends Component {
                 <div class="m-2 blogPost">
                   <img src={blog.image} />
                   <h3 className="blogArticles mt-4">{blog.title}</h3>
-                  <a className="internalButton2" href="#">
+                  <a className="internalButton2" href="/resources">
                     see more
                   </a>
                 </div>
@@ -252,7 +252,7 @@ class BlogPosts extends Component {
                 <div class="m-2 blogPost">
                   <img className="blogVideos" src={blog.image} />
                   <h3 className="blogArticles mt-4">{blog.title}</h3>
-                  <a className="internalButton2" href="#">
+                  <a className="internalButton2" href="/resources">
                     see more
                   </a>
                 </div>
@@ -261,7 +261,7 @@ class BlogPosts extends Component {
         </div>
 
         <div class="pb-4">
-          <a class="m-5 p-5 weDo d-flex justify-content-center" href="#">
+          <a class="m-5 p-5 weDo d-flex justify-content-center" href="/resources">
             <span class="internalButton">more from our blog</span>
           </a>
         </div>

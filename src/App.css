@@ -16,6 +16,13 @@ only screen and (min-device-pixel-ratio: 1.5){
   overflow-x: hidden;
 }
 
+@media(max-width: 375px) {
+  .dropdown {
+    background-color: black;
+  }
+}
+
+
 body {
   font-family: azo-sans, sans-serif;
   font-style: normal;
@@ -172,7 +179,7 @@ a {
 }
 
 .slickTwo {
-  height: 150px;
+  height: auto;
 
 }
 
@@ -210,7 +217,7 @@ a {
 .weDoAlot {
   text-transform: uppercase;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: azo-sans;
   color:  #131516;
   font-weight: 400;
@@ -314,7 +321,6 @@ a {
 
 .weMakeGreatWork {
   background-color: #F2F3F4;
-  height: 150px;
 }
 
 .GreatWorkCarousel {
@@ -367,20 +373,22 @@ a {
 .wpHeaderText1 {
   grid-column: 1;
   grid-row: 2;
-  font-size: 30px;
+  font-size: 20px;
   color:  #FFFFFF;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 6px;
+  text-align: center;
 }
 
 .wpHeaderText2 {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
   font-size: 18px;
   font-style: azo-sans;
   color:  #F8F8F8;
   font-weight: 100;
+  text-align: center;
 }
 
 /* clients */

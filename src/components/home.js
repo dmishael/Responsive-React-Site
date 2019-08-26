@@ -40,10 +40,10 @@ class Home extends Component {
             </button>
 
             <div
-              class="mr-5 collapse navbar-collapse"
+              class="mr-5 collapse navbar-collapse "
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav">
+              <ul class="navbar-nav dropdown">
                 <li class="m-5 nav-item">
                   <a class="navLink" href="/work">
                     Work
@@ -196,6 +196,7 @@ class Home extends Component {
         <div class="weMakeGreatWork align-middle d-flex justify-content-around">
           <p class="weDoAlot m-5">we make great work</p>
         </div>
+
         <div class="slick">
           <SliderTwo />
 
@@ -242,7 +243,7 @@ class Home extends Component {
             </a>
           </div>
 
-          <div class="p-5 m-5 hpHeaderText3 d-flex justify-content-center">
+          <div class="pt-5 mt-5 hpHeaderText3 d-flex justify-content-center">
             <img
               class="arrow arrowBounce"
               src={require("../assets/arrow.png")}

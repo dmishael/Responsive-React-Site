@@ -13,7 +13,7 @@ class AboutSlider extends React.Component {
     };
     return (
       <section class="slickTwo" id="slideshowTwo">
-        <Slider {...settings} height="150px" id="slideshow">
+        <Slider {...settings} height="auto" id="slideshow">
           <div className="clientSlider pl-3 pt-4 text-center" id="clientQuote">
             {" "}
             From creative services to software development, they’ve exceeded all

@@ -9,12 +9,11 @@ import Quiz2 from "./quiz2.js"
 class Work extends Component {
 
   render() {
-    // console.log(this.props.social)
+
     return (
       <div className="Work">
         <div className="workHero wpHeader">
 
-    // nav bar
 
     <nav className="navbar position navbar-expand-lg navbar-dark bg-transparent">
       <a className="navbar-brand" href="/"> <img src={require("../assets/frenik_grey_logo.png")} className="fmglogo" alt="frenik logo"/> </a>
@@ -45,23 +44,22 @@ class Work extends Component {
 
 
 
-// header
 
 
-    <div className="pb-2 mb-2 wpHeaderText1 d-flex justify-content-center">
+
+    <p className="pb-1 mb-1 wpHeaderText1 m-auto">
       We Like Storytelling
-    </div>
+    </p>
 
-    <div className="pt-4 mt-5 wpHeaderText2 d-flex justify-content-center">
+    <p className="pt-3 mt-3 wpHeaderText2 text-align-center">
       Here are just a few stories of how we’ve worked with clients in the past.
-    </div>
-    <div className="pt-5 mt-5 wpHeaderText2 d-flex justify-content-center">
+    </p>
+    <p className="pt-5 mt-5 wpHeaderText2 text-align-center">
       Click to learn more, or call us if you want us to talk your ear off (we’ll do it, too).
-    </div>
+    </p>
 
   </div>
 
-  // clients
 
   <div className="row pt-3 mt-5 ">
     <div className="col-sm-4">
@@ -158,7 +156,7 @@ class Work extends Component {
 
 
 
-  <video width="100%" height="670px" controls>
+  <video width="100%" height="auto" controls>
     <source src={require("../assets/Frenik-Brand-Video.mp4")} type="video/mp4"/>
   </video>
 
